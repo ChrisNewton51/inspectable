@@ -1,0 +1,30 @@
+{
+  "cli": {
+    "version": ">= 2.8.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "node": "14.18.1",
+      "cache": {
+        "disabled": true
+      },
+      "env": {
+        "EAS_BUILD_DISABLE_NPM_CACHE": "1"
+      },
+      "android": {
+        "buildType": "app-bundle",
+        "image": "latest"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

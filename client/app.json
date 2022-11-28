@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "Inspectable",
+    "slug": "inspectable",
+    "version": "1.0.13",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Inspectable to access your photos.",
+          "savePhotosPermission": "Allow Inspectable to save photos.",
+          "isAccessMediaLocationEnabled": "true"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos"
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/2a655c30-ab57-4f60-8db0-1ddea24e62ca"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow Inspectable to access your photos.",
+        "NSPhotoLibraryAddUsageDescription": "Allow Inspectable to save photos."
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.internetintern.inspectable"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.internetintern.inspectable",
+      "permissions": [
+        "CAMERA",
+        "CAMERA_ROLL",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "versionCode": 13
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2a655c30-ab57-4f60-8db0-1ddea24e62ca"
+      }
+    }
+  }
+}
